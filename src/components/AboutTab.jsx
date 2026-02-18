@@ -1,4 +1,4 @@
-const VERCEL_URL = 'https://rocket-tracker-ivory.vercel.app' // TODO: update if wrong
+const VERCEL_URL = 'https://rocket-tracker-beta.vercel.app/'
 
 export default function AboutTab() {
   return (
