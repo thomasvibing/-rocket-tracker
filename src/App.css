@@ -2547,3 +2547,207 @@ body {
     transition-duration: .01ms !important;
   }
 }
+
+/* ══════════════════════════════════════════════
+   ABOUT TAB
+══════════════════════════════════════════════ */
+.about-view {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: calc(var(--u) * 4) calc(var(--u) * 3);
+}
+
+.about-tab {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--u) * 5);
+}
+
+/* Prototype banner */
+.about-prototype-banner {
+  display: flex;
+  gap: calc(var(--u) * 2);
+  align-items: flex-start;
+  background: #FFF8F0;
+  border: 1.5px solid #F7981C;
+  border-radius: var(--r-sm);
+  padding: calc(var(--u) * 2) calc(var(--u) * 2.5);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink2);
+}
+.about-prototype-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.about-prototype-banner strong {
+  color: var(--ink);
+}
+
+/* Hero */
+.about-hero {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--u) * 2);
+}
+.about-title {
+  font-size: clamp(22px, 3.5vw, 30px);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+.about-title--accent {
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.about-lead {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink2);
+  max-width: 640px;
+}
+
+/* Feature grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(var(--u) * 2);
+}
+.about-card {
+  background: var(--white);
+  border: 1.5px solid var(--rule);
+  border-radius: var(--r-sm);
+  padding: calc(var(--u) * 2.5);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--u) * 1);
+}
+.about-card__icon {
+  font-size: 22px;
+  line-height: 1;
+}
+.about-card h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.about-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink2);
+}
+
+/* Vision text */
+.about-vision {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--u) * 1.5);
+  padding-top: calc(var(--u) * 1);
+  border-top: 1.5px solid var(--rule);
+}
+.about-vision h2 {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+.about-vision p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink2);
+}
+
+/* Tech stack */
+.about-stack {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--u) * 1.5);
+  padding-top: calc(var(--u) * 1);
+  border-top: 1.5px solid var(--rule);
+}
+.about-stack h2 {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+.about-stack__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--u) * 1);
+}
+.about-chip {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border: 1.5px solid var(--rule2);
+  border-radius: var(--r-pill);
+  color: var(--ink2);
+  background: var(--off);
+  font-family: 'Archivo', monospace;
+}
+.about-stack__note {
+  font-size: 13px;
+  color: var(--ink3);
+  line-height: 1.6;
+}
+
+/* Links */
+.about-links {
+  display: flex;
+  gap: calc(var(--u) * 1.5);
+  flex-wrap: wrap;
+}
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--r-pill);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.about-link:hover {
+  opacity: 0.8;
+}
+.about-link--gh {
+  background: var(--ink);
+  color: var(--white);
+}
+.about-link--vercel {
+  background: var(--white);
+  border: 1.5px solid var(--rule2);
+  color: var(--ink);
+}
+
+/* Footer note */
+.about-footer {
+  font-size: 12px;
+  color: var(--ink3);
+  line-height: 1.6;
+  padding-top: calc(var(--u) * 1);
+  border-top: 1.5px solid var(--rule);
+}
+.about-footer strong {
+  color: var(--ink2);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-links {
+    flex-direction: column;
+  }
+  .about-link {
+    justify-content: center;
+  }
+}

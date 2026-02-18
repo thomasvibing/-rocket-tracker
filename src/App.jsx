@@ -3,6 +3,7 @@ import JobBoard from './components/JobBoard'
 import Tracker from './components/Tracker'
 import RecruiterModal from './components/RecruiterModal'
 import ProfileTab from './components/ProfileTab'
+import AboutTab from './components/AboutTab'
 import './App.css'
 
 // Oferty pobrane na żywo z justjoin.it przez agent-browser (Playwright)
@@ -280,6 +281,12 @@ export default function App() {
       <nav className="view-nav">
         <div className="view-nav__inner">
           <button
+            className={`view-nav__tab ${activeView === 'about' ? 'view-nav__tab--active' : ''}`}
+            onClick={() => setActiveView('about')}
+          >
+            O projekcie
+          </button>
+          <button
             className={`view-nav__tab ${activeView === 'jobs' ? 'view-nav__tab--active' : ''}`}
             onClick={() => setActiveView('jobs')}
           >
@@ -305,6 +312,12 @@ export default function App() {
       </nav>
 
       <main className="main">
+        {activeView === 'about' && (
+          <div className="about-view">
+            <AboutTab />
+          </div>
+        )}
+
         {activeView === 'jobs' && (
           <div className="jobs-view">
             <div className="jobs-view__header">
