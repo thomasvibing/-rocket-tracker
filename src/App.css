@@ -2400,6 +2400,131 @@ body {
 }
 
 /* ══════════════════════════════════════════════
+   MOBILE  ≤ 480px
+══════════════════════════════════════════════ */
+@media (max-width: 480px) {
+
+  /* ── Header ── */
+  .header-inner { padding: 0 14px; gap: 10px; }
+  .logo-tag { display: none; }
+
+  /* ── Nav tabs ── */
+  .view-nav__inner { padding: 0 4px; gap: 0; }
+  .view-nav__tab { padding: 10px 12px; font-size: 12px; letter-spacing: 0; }
+  .view-nav__count { display: none; }
+
+  /* ── Main ── */
+  .main { padding: 14px 0 80px; }
+
+  /* ── Section headers ── */
+  .jobs-view__header,
+  .tracker-view__header {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 14px;
+    margin-bottom: 14px;
+  }
+  .jobs-view__title { font-size: 18px; }
+
+  /* ── Job cards ── */
+  .job-list { gap: 8px; }
+  .job-card { padding: 12px 12px 10px; border-radius: var(--r-xs); }
+  .job-title { font-size: 14px; }
+
+  /* ── Stats bar — horizontal scroll ── */
+  .stats-bar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 0 14px;
+    gap: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .stats-bar::-webkit-scrollbar { display: none; }
+  .stat-item { padding: 10px 12px; flex-shrink: 0; }
+  .stat-label { font-size: 10px; }
+  .stats-bar__sep { display: none; }
+
+  /* ── Tracker filters — stack ── */
+  .tracker-filters { flex-direction: column; padding: 10px 14px; gap: 6px; }
+  .filter-search,
+  .filter-select { width: 100%; }
+
+  /* ── Tracker table head: hide on mobile ── */
+  .tracker-table { border-radius: 0; }
+  .tracker-table__head { display: none; }
+
+  /* ── Tracker row: 2-row card layout ──
+     Grid: logo | info+status | chevron
+     Row 1: logo | title         | chevron
+     Row 2: logo | company+status| chevron         */
+  .tracker-row__summary {
+    grid-template-columns: 38px 1fr 28px;
+    grid-template-rows: auto auto;
+    row-gap: 6px;
+    column-gap: 10px;
+    padding: 12px 14px;
+  }
+
+  .tr__status-label { display: none; }
+
+  .tr__logo     { grid-column: 1; grid-row: 1 / 3; align-self: center; }
+  .tr__identity { grid-column: 2; grid-row: 1; min-width: 0; }
+  .tr__status   { grid-column: 2; grid-row: 2; }
+  .tr__chevron  { grid-column: 3; grid-row: 1 / 3; align-self: center; }
+
+  /* Compact status select */
+  .status-select {
+    height: 26px;
+    font-size: 11px;
+    padding: 0 20px 0 7px;
+    background-size: 10px;
+  }
+
+  /* Tighter identity text */
+  .tr__title { font-size: 13px; }
+  .tr__company { font-size: 11px; }
+
+  /* ── Expanded row detail ── */
+  .tracker-row__detail { padding: 0; }
+  .tr__detail-inner {
+    grid-template-columns: 1fr;
+    padding: 12px 14px;
+    gap: 12px;
+  }
+  .interview-section { padding: 12px 14px; }
+  .paste-textarea { font-size: 12px; min-height: 120px; }
+  .recall-summary { font-size: 11px; }
+  .btn-recall-demo,
+  .btn-paste-transcript { font-size: 12px; padding: 8px 14px; }
+
+  /* ── Profile tab ── */
+  .profile-tab__inner { grid-template-columns: 1fr; }
+  .seniority-pills { gap: 6px; }
+  .seniority-pill { padding: 6px 10px; }
+
+  /* ── Modal — full-width bottom sheet ── */
+  .overlay { padding: 0; align-items: flex-end; }
+  .modal {
+    width: 100%;
+    max-width: 100%;
+    max-height: 88vh;
+    border-radius: 14px 14px 0 0;
+    margin: 0;
+  }
+
+  /* ── Toast ── */
+  .toast {
+    left: 12px;
+    right: 12px;
+    bottom: 16px;
+    width: auto;
+    transform: none;
+    text-align: center;
+  }
+}
+
+/* ══════════════════════════════════════════════
    REDUCED MOTION
 ══════════════════════════════════════════════ */
 @media (prefers-reduced-motion: reduce) {
