@@ -16,7 +16,7 @@ export default function AboutTab() {
       <div className="about-hero">
         <h1 className="about-title">
           Rynek pracy się zmienia.<br />
-          <span className="about-title--accent">Chaos postępuje.</span>
+          <span className="about-title--accent">Liczy się Outcome, proaktywność i zarządzanie postępującym chaosem.</span>
         </h1>
         <p className="about-lead">
           Wysyłasz 15, 20, 30 aplikacji. Tracisz wątek. Nie pamiętasz kto odpowiedział, kto nie,
