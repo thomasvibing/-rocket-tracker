@@ -220,7 +220,7 @@ export default function App() {
   const [recruiterModal, setRecruiterModal] = useState(null)
   const [toast, setToast] = useState(null)
   const [profile, setProfile] = useState(DEFAULT_PROFILE)
-  const [activeView, setActiveView] = useState('jobs')
+  const [activeView, setActiveView] = useState('about')
 
   const showToast = (message, type = 'success') => {
     setToast({ message, type })
