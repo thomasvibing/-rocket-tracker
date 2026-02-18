@@ -25,6 +25,22 @@ export default function AboutTab() {
         <p className="about-lead">
           I w tym czekaniu jest właśnie problem.
         </p>
+        <p className="about-lead">
+          Rynek pracy się zmienia. Przez lata kandydat wysyłał CV i czekał na telefon. Firmy miały
+          inicjatywę, kandydaci cierpliwość. To się skończyło. Najlepsi kandydaci nie czekają, oni
+          followupują, szukają kontaktu bezpośrednio z rekruterem albo osobą decyzyjną, piszą pierwsi.
+          Budują kontekst zanim jeszcze dostają zaproszenie na rozmowę.
+        </p>
+        <p className="about-lead">
+          Jednocześnie samo CV przestaje być przewagą. To tylko papierek lakmusowy, który otwiera
+          lub zamyka drzwi. Prawdziwa przewaga to szybkość, kontekst i umiejętność pokazania
+          konkretnego wyniku zanim firma zdąży zapytać.
+        </p>
+        <p className="about-lead">
+          Problem w tym, że żadne narzędzie po stronie kandydata nie zostało zaprojektowane pod ten
+          nowy tryb pracy. RocketJobs ma dane i pozycję żeby to zmienić. Ten prototyp pokazuje
+          jak mogłoby to wyglądać.
+        </p>
       </div>
 
       <div className="about-grid">
@@ -69,24 +85,6 @@ export default function AboutTab() {
         </div>
       </div>
 
-      <div className="about-vision">
-        <p>
-          Rynek pracy się zmienia. Przez lata kandydat wysyłał CV i czekał na telefon. Firmy miały
-          inicjatywę, kandydaci cierpliwość. To się skończyło. Najlepsi kandydaci nie czekają, oni
-          followupują, szukają kontaktu bezpośrednio z rekruterem albo osobą decyzyjną, piszą pierwsi.
-          Budują kontekst zanim jeszcze dostają zaproszenie na rozmowę.
-        </p>
-        <p>
-          Jednocześnie samo CV przestaje być przewagą. To tylko papierek lakmusowy, który otwiera
-          lub zamyka drzwi. Prawdziwa przewaga to szybkość, kontekst i umiejętność pokazania
-          konkretnego wyniku zanim firma zdąży zapytać.
-        </p>
-        <p>
-          Problem w tym, że żadne narzędzie po stronie kandydata nie zostało zaprojektowane pod ten
-          nowy tryb pracy. RocketJobs ma dane i pozycję żeby to zmienić. Ten prototyp pokazuje
-          jak mogłoby to wyglądać.
-        </p>
-      </div>
 
       <div className="about-stack">
         <h2>Stack technologiczny</h2>
