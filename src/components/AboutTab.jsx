@@ -15,14 +15,15 @@ export default function AboutTab() {
 
       <div className="about-hero">
         <h1 className="about-title">
-          Szukanie pracy w IT to za dużo zakładek.<br />
-          <span className="about-title--accent">RocketTracker to próba naprawienia tego.</span>
+          Rynek pracy się zmienia.<br />
+          <span className="about-title--accent">Chaos postępuje.</span>
         </h1>
         <p className="about-lead">
-          Kilkanaście otwartych ofert, notatka na kartce kiedy był screening, wiadomość do rekrutera
-          której nie wysłałeś bo nie wiedziałeś co napisać. Tak wygląda aktywne szukanie pracy
-          dla większości ludzi w polskim IT. Ten prototyp pokazuje jak mogłoby to wyglądać
-          gdyby ktoś naprawdę to zaprojektował od strony kandydata.
+          Wysyłasz 15, 20, 30 aplikacji. Tracisz wątek. Nie pamiętasz kto odpowiedział, kto nie,
+          gdzie był screening. Czekasz.
+        </p>
+        <p className="about-lead">
+          I w tym czekaniu jest właśnie problem.
         </p>
       </div>
 
@@ -69,18 +70,21 @@ export default function AboutTab() {
       </div>
 
       <div className="about-vision">
-        <h2>Jaki problem to rozwiązuje?</h2>
         <p>
-          Rynek pracy w IT idzie w kierunku coraz bardziej algorytmicznego dopasowania
-          po obu stronach. Firmy od lat mają ATS z AI scoringiem. Kandydaci nadal używają Excela
-          i Post-it'ów. Ta asymetria jest realnym problemem i nikt poważnie go nie zaadresował
-          po stronie kandydata.
+          Rynek pracy się zmienia. Przez lata kandydat wysyłał CV i czekał na telefon. Firmy miały
+          inicjatywę, kandydaci cierpliwość. To się skończyło. Najlepsi kandydaci nie czekają, oni
+          followupują, szukają kontaktu bezpośrednio z rekruterem albo osobą decyzyjną, piszą pierwsi.
+          Budują kontekst zanim jeszcze dostają zaproszenie na rozmowę.
         </p>
         <p>
-          RocketJobs ma tu unikalną pozycję: dane ofert, baza firm, ruch kandydatów.
-          To idealne miejsce żeby zbudować narzędzie, które faktycznie zwiększa
-          skuteczność szukania pracy. Nie przez kolejne powiadomienia mailowe,
-          ale przez kontekst i automatyzację w miejscu gdzie kandydat i tak już jest.
+          Jednocześnie samo CV przestaje być przewagą. To tylko papierek lakmusowy, który otwiera
+          lub zamyka drzwi. Prawdziwa przewaga to szybkość, kontekst i umiejętność pokazania
+          konkretnego wyniku zanim firma zdąży zapytać.
+        </p>
+        <p>
+          Problem w tym, że żadne narzędzie po stronie kandydata nie zostało zaprojektowane pod ten
+          nowy tryb pracy. RocketJobs ma dane i pozycję żeby to zmienić. Ten prototyp pokazuje
+          jak mogłoby to wyglądać.
         </p>
       </div>
 
